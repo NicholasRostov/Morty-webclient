@@ -3,4 +3,5 @@
 <%= @morty %>
 <p><%= @morty["character"] %></p>
 <p><%= @morty["quote"] %></p>
-<p><%= @morty["location"] %></p>
+ <input type="submit" value="Destroy Character">
+<%= link_to "Delete Me", "/mortys/#{@morty.id}", method: :delete %>
